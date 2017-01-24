@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Dating Site</title>
+
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+	<h1>Please Enter Your Details For Our Dating Website</h1>
+	<fieldset>
+		<legend>Your Face</legend>
+		<label for="YourImage" title="Your image">Your Image: </label>
+		<input type="file" name="ChooseFile" value="Choose File..." required><br/>
+		<label>Image preview: </label>
+	</fieldset>
+
+	<fieldset>
+		<legend>Your General Details</legend>
+		<label for="nameField">Name: </label>
+		<input type="text" name="nameField" required> <br/>
+
+		<label for="gender">Gender: </label>
+		<input type="radio" name="gender" value="Male" required> Male
+		<input type="radio" name="gender" value="Female" required> Female <br/>
+
+		<label for="age">Age: </label>
+		<input type="number" name="age" required> <br/>
+
+		<label for="dob">Date of Birth: </label>
+		<input type="date" name="dob"> <br/>
+
+		<label for="color">Favorite Color: </label>
+		<input type="color" name="color"> <br/>
+
+		<label for="countries">Which Country? </label>
+			<select name="countries"> 
+				<option value="No selection" selected>USA</option>
+				<option value="USA" selected>USA</option>
+				<option value="Nigeria">Nigeria</option>
+		</select>
+
+		<br/>
+
+		</fieldset>
+
+	<fieldset>
+		<legend>Your Indicators</legend>
+		<label for="height">Height: </label>
+		<input type="range" name="height" min="0" max="100" step="5"> <br/>
+
+		<label for="salary">Salary: </label>
+		<input type="range" name="salary" min="0" max="100" step="5">
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Your Contact Information</legend>
+		<label for="email">Email: </label>
+		<input type="email" name="email" required> <br/>
+
+		<label for="mobile">Mobile: </label>
+		<input type="tel" name="mobile"> <br/>
+
+		<label for="address">Address: </label>
+		<input type="textarea" name="address"> <br/>
+
+		<label for="contactMethod">Method to contact you: </label>
+		<input type="radio" name="contactMethod" value="Email"> Email
+		<input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp
+		<input type="radio" name="contactMethod" value="In-app chat"> In-app chat
+	</fieldset>
+
+	<input type="submit" name="submit" value="Submit!">
+	</body>
+</form>
+</html>
