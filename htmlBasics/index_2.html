@@ -3,8 +3,30 @@
 <head>
 	<title>Welcome to Dating Site</title>
 
-	<style type="text/css">
+	<style>
+		fieldset {
+			border: yellow; 
+			border: 10px solid yellow; 
+			background:lightyellow; 
+			margin-bottom: 10px;
+			width: 720px;
+		}
+
+		label {
+			width: 180px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: right;
+		}
+
 		
+
+		.leftLabel {
+
+		}
+
+
+
 	</style>
 </head>
 <body>
@@ -27,7 +49,7 @@
 		<input type="radio" name="gender" value="Female" required> Female <br/>
 
 		<label for="age">Age: </label>
-		<input type="number" name="age" required> <br/>
+		<input type="number" name="age" min="0" required> <br/>
 
 		<label for="dob">Date of Birth: </label>
 		<input type="date" name="dob"> <br/>
@@ -49,11 +71,10 @@
 	<fieldset>
 		<legend>Your Indicators</legend>
 		<label for="height">Height: </label>
-		<input type="range" name="height" min="0" max="100" step="5"> <br/>
+		<span class="leftLabel">Short</span><input type="range" name="height" min="0" max="100" step="5"> <br/><span class="rightLabel">Tall</span>
 
 		<label for="salary">Salary: </label>
-		<input type="range" name="salary" min="0" max="100" step="5">
-
+		<span class="leftLabel">Poor</span><input type="range" name="salary" min="0" max="100" step="5"><span class="rightLabel">Rich</span>
 	</fieldset>
 
 	<fieldset>
@@ -65,7 +86,7 @@
 		<input type="tel" name="mobile"> <br/>
 
 		<label for="address">Address: </label>
-		<textarea name="address"> </textarea> <br/>
+		<textarea name="address"></textarea> <br/>
 
 		<label for="contactMethod">Method to contact you: </label>
 		<input type="radio" name="contactMethod" value="Email"> Email
