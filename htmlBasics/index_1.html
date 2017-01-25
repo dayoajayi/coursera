@@ -37,9 +37,12 @@
 
 		<label for="countries">Which Country? </label>
 			<select name="countries"> 
-				<option value="No selection" selected>USA</option>
-				<option value="USA" selected>USA</option>
+				<option value="No selection" selected></option>
+				<option value="USA">USA</option>
 				<option value="Nigeria">Nigeria</option>
+				<option value="Canada">Canada</option>
+				<option value="Mexico">Mexico</option>
+				<option value="Kenya">Kenya</option>	
 		</select>
 
 		<br/>
@@ -68,9 +71,9 @@
 		<textarea name="address"> </textarea> <br/>
 
 		<label for="contactMethod">Method to contact you: </label>
-		<input type="radio" name="contactMethod" value="Email"> Email
-		<input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp
-		<input type="radio" name="contactMethod" value="In-app chat"> In-app chat
+		<input type="checkbox" name="contactMethod" value="Email"> Email
+		<input type="checkbox" name="contactMethod" value="WhatsApp"> WhatsApp
+		<input type="checkbox" name="contactMethod" value="In-app chat"> In-app chat
 	</fieldset>
 
 	<input type="submit" name="submit" value="Submit!">

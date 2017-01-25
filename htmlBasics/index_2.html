@@ -19,10 +19,24 @@
 			text-align: right;
 		}
 
-		
+		textarea {	
+			width:360px; 
+			height:50px;
+		}
+
+		.selectors {
+			width: auto;
+		}
 
 		.leftLabel {
+			text-align: center;
+			background-color: pink;
+		}
 
+		.rightLabel {
+			text-align: center;
+			background-color: green;
+			color: yellow;
 		}
 
 
@@ -45,8 +59,8 @@
 		<input type="text" name="nameField" required> <br/>
 
 		<label for="gender">Gender: </label>
-		<input type="radio" name="gender" value="Male" required> Male
-		<input type="radio" name="gender" value="Female" required> Female <br/>
+		<input type="radio" name="gender" class="selectors" value="Male" required> Male
+		<input type="radio" name="gender" class="selectors" value="Female" required> Female <br/>
 
 		<label for="age">Age: </label>
 		<input type="number" name="age" min="0" required> <br/>
@@ -59,9 +73,12 @@
 
 		<label for="countries">Which Country? </label>
 			<select name="countries"> 
-				<option value="No selection" selected>USA</option>
-				<option value="USA" selected>USA</option>
+				<option value="No selection" selected></option>
+				<option value="USA">USA</option>
 				<option value="Nigeria">Nigeria</option>
+				<option value="Canada">Canada</option>
+				<option value="Mexico">Mexico</option>
+				<option value="Kenya">Kenya</option>		
 		</select>
 
 		<br/>
@@ -71,10 +88,10 @@
 	<fieldset>
 		<legend>Your Indicators</legend>
 		<label for="height">Height: </label>
-		<span class="leftLabel">Short</span><input type="range" name="height" min="0" max="100" step="5"> <br/><span class="rightLabel">Tall</span>
+		<span class="leftLabel">Short</span><input type="range" name="height" min="0" max="100" step="5"><span class="rightLabel">Tall</span> <br/>
 
 		<label for="salary">Salary: </label>
-		<span class="leftLabel">Poor</span><input type="range" name="salary" min="0" max="100" step="5"><span class="rightLabel">Rich</span>
+		<span class="leftLabel">Poor</span><input type="range" name="salary" min="0" max="100" step="5"><span class="rightLabel">Rich</span> <br/>
 	</fieldset>
 
 	<fieldset>
@@ -89,9 +106,9 @@
 		<textarea name="address"></textarea> <br/>
 
 		<label for="contactMethod">Method to contact you: </label>
-		<input type="radio" name="contactMethod" value="Email"> Email
-		<input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp
-		<input type="radio" name="contactMethod" value="In-app chat"> In-app chat
+		<input type="checkbox" name="contactMethod" class="selectors" value="Email"> Email
+		<input type="checkbox" name="contactMethod" class="selectors" value="WhatsApp"> WhatsApp
+		<input type="checkbox" name="contactMethod" class="selectors" value="In-app chat"> In-app chat
 	</fieldset>
 
 	<input type="submit" name="submit" value="Submit!">
